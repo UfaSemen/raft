@@ -132,6 +132,9 @@ type Config struct {
 	// a leader before we attempt an election.
 	HeartbeatTimeout time.Duration
 
+	//HeartbeatAmount specifies amount of heartbeats needed to admit node failure
+	HeartbeatAmount int
+
 	// ElectionTimeout specifies the time in candidate state without
 	// a leader before we attempt an election.
 	ElectionTimeout time.Duration

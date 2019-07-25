@@ -24,6 +24,7 @@ type LeaderObservation struct {
 // PeerObservation is sent to observers when peers change.
 type PeerObservation struct {
 	Removed bool
+	Failed  bool
 	Peer    Server
 }
 
